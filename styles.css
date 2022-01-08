@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Merriweather:ital,wght@1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.font {
+    font-size: 20px;
+}
+
+
+/* ----------Home Page -------*/
+
+#home,
+#login,
+#signup {
+    display: flex;
+}
+
+.hr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+}
+
+.navbar {
+    margin-bottom: 1px solid black;
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-brand img {
+    width: 80px;
+    height: 40px;
+}
+
+.dropdown-item :hover {
+    background-color: white;
+}
+
+.side-nav {
+    width: 20vw;
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+
+.carousel,
+.carousel-width {
+    width: 60vw;
+    height: 80vh;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: black;
+}
+
+.links {
+    width: 20vw;
+    height: 80vh;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.features-img {
+    width: 100%;
+}
+
+#home p {
+    font-family: 'Merriweather', serif;
+}
+
+
+/* -------------------------- */
+
+
+/* Login pages */
+
+.login-div,
+.signup-div,
+.qr-div {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form,
+.signup-form,
+.qr-form {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+#register {
+    width: 100vw;
+}
+
+.register-div {
+    width: 80%;
+}
+
+
+/* -------------- */
+
+@media only screen and (max-width: 766px) {
+    .carousel,
+    .carousel-width {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    /* homee--- */
+    .carousel,
+    .carousel-width {
+        width: 100vw;
+        height: 50vh;
+    }
+    .dropdown-item {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.034);
+    }
+    /* --------- */
+    .signup-div,
+    .login-div {
+        width: 100vw;
+    }
+    #register {
+        font-size: 30px;
+    }
+    form label {
+        font-size: 20px;
+    }
+    .img-div {
+        display: none;
+    }
+    .main {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .small-screenwidth {
+        font-size: 16px;
+    }
+}
